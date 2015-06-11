@@ -1,0 +1,112 @@
+.main-image-chose{
+	position: fixed
+	;top:0
+	;left: 0
+	;width:96%
+	;height: 80%
+	;z-index: 100
+	;margin-top: 5%
+	;margin-left:3%
+	;display:none
+	;background-color: rgba(0,0,0,0.7);
+}
+/*用户选择头像样式*/
+.main-image-chose .close{
+	width:3em
+	;height: 3em
+	;float: right
+}
+
+.main-image-chose .close img{
+	width:100%
+	;height: 100%
+}
+.main-image-chose .close img:hover{
+	width:110%
+	;height: 110%
+}
+
+.main-image-chose .chose-cols{
+	width:100%
+	;height: 30%
+	;margin-top: 5%
+}
+
+.main-image-chose .chose-cols .chose-rows{
+	width:17%
+	;height: 100%
+	;margin-left: 2.2em
+	;float: left
+}
+
+.main-image-chose .chose-cols .chose-rows img{
+	width:100%
+	;height: 100%
+}
+
+.main-image-chose .chose-cols .chose-rows img:hover{
+	border: 0.1em solid #ccc
+}
+/*商家选择头像样式*/
+
+.seller-image-chose{
+	position: fixed
+	;top:0
+	;left: 0
+	;width:70%
+	;height: 80%
+	;z-index: 100
+	;margin-top: 5%
+	;margin-left:15%
+	;display:none
+	;background-color: rgba(0,0,0,0.7);
+}
+
+.seller-image-chose .seller-chose-cols{
+	width:100%
+	;height: 40%
+	;float: left
+	;margin-top: 2%
+	;padding-left: 3em
+}
+
+.seller-image-chose .seller-chose-cols .seller-chose-box{
+	width:25%
+	;height: 100%
+	;float: left
+	;border-radius: 0.5em
+	
+}
+
+.seller-chose-box img{
+	width: 100%
+	;height: 100%
+}
+
+
+.seller-image-chose .seller-chose-cols .seller-input-box{
+	width:75%
+	;height: 100%
+	;float: left;
+}
+
+
+.seller-image-chose .seller-chose-cols .seller-input-box td{
+	height:2.7em 
+	;text-align: right
+}
+
+.seller-image-chose .close{
+	width:3em
+	;height: 3em
+	;float: right
+}
+
+.seller-image-chose .close img{
+	width:100%
+	;height: 100%
+}
+.seller-image-chose .close img:hover{
+	width:110%
+	;height: 110%
+}

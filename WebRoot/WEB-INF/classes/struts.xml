@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts2" extends="struts-default" namespace="/">
+		<action name="login" class="com.actions.UserAction">
+			<result name="input">/index.jsp</result>
+			<result name="customerlogin">/loginsuccess.jsp</result>
+			<result name="shoperlogin">/page/seller/shop.jsp</result>
+			<result name="loginfail">/index.jsp</result>
+		</action>
+		<action name="register" class="com.actions.UserAction">
+			<result name="input">/register.jsp</result>
+			<result name="registfail">/register.jsp</result>
+			<result name="registsuccess">/registsuccess.jsp</result>
+			<result name="shopregistfail">/shopregister.jsp</result>
+			<result name="shopregistsuccess">/shopregistsuccess.jsp</result>
+		</action>
+		<action name="menu" class="com.actions.MenuAction">
+			<result name="checksuccess">/page/seller/checkMenu.jsp</result>
+			<result name="menusuccess">/page/seller/addDish.jsp</result>
+			<result name="menufail">/page/seller/addDish.jsp</result>
+		</action>
+		
+	</package>
+</struts>    

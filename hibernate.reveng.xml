@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="firstaddress" catalog="biu" class="Firstaddress"></table>
+	<table name="secondaddress" catalog="biu" class="Secondaddress"></table>
+	<table name="shoper" catalog="biu" class="Shop"></table>
+	<table name="user" catalog="biu" class="User"></table>
+	<table name="menu" catalog="biu" class="Menu"></table>
+	<table name="ordertable" catalog="biu" class="Order"></table>
+	<table name="orderdetail" catalog="biu" class="Orderdetail"></table>
+</hibernate-reverse-engineering>

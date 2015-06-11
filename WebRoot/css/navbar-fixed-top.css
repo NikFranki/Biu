@@ -1,0 +1,433 @@
+body {
+  	background:#F5F5F5
+}
+
+/*导航条*/
+.nav-box{
+  position:fixed
+  ;border-bottom-left-radius:1em
+  ;border-bottom-right-radius:1em
+  ;top:0
+  ;right:0
+  ;width:100%
+  ;height:auto
+  ;background-color:#B0C4DE
+  ;border-bottom:0.3em solid #F0F8FF
+}
+/*导航条-图标*/
+.logo-box{
+	float: left
+	;border-radius:0.5em
+	;margin-left: 5%
+	;vertical-align: middle
+	;padding-right:1%
+}
+.logo-box a{
+	font-size: 1.3em
+	;font-weight: bold
+	;font-family:Consolas
+	;vertical-align: middle
+	;text-decoration:none
+}
+
+.logo-box:hover{
+	background-color:#fee
+}
+.logo-box img{
+	margin-top: 0;
+	vertical-align: middle;
+}
+/*导航条-banner*/
+.banner-box{
+	float: left
+	;display: inline
+	;vertical-align: middle
+	;padding-left:1%
+	;padding-right:1%
+}
+
+.banner-box ul li{
+	list-style:none
+	;margin-top:0.6em
+	;padding-right:1em
+	;float:left
+}
+
+.banner-box ul li a{
+	font-size: 1.4em
+	;border-radius:0.8em
+	;padding: 0.8em
+	;font-family:Consolas
+	;text-decoration:none
+}
+.banner-box a:hover{
+	background-color:#fee
+}
+/*导航条-login-box*/
+.nav-box .login-box{
+	float: right
+	;margin-right: 6%
+	;margin-top:0.5%
+	;text-align: center
+}
+.nav-box .login-box span{
+	font-size: 1.4em
+	;font-family:Consolas
+	;text-decoration:none
+}
+.nav-box .login-box s{
+	font-size: 1.4em
+	;text-decoration:none
+}
+.nav-box .login-box a{
+	font-size: 1.4em
+	;border-radius:0.8em
+	;padding:0.2em
+	;font-family:Consolas
+	;text-decoration:none
+}
+.nav-box .login-box span a{
+	font-size: 1.1em
+	;font-family:Consolas
+	;text-decoration:none
+}
+.nav-box .login-box a:hover{
+	background-color:#fee
+}
+
+.color{
+	color: #FFD700
+}
+
+/*通知栏*/
+.notice-broder-box{
+	position:fixed
+	;border-radius:0.5em
+	;margin-top:0
+	;right:6%
+	;width:20%
+  	;height:50%
+  	;background-color:#E2FDF2
+	;border:0.1em solid #ddd
+	;display: block
+}
+/*通知栏-标题栏*/
+.notice-broder-box .header-tittle{
+	background-color:#8dd
+	;border: 0.1em solid #ccc
+	;border-radius:0.5em
+	;width:100%
+	;text-align:center
+	;display:block
+}
+/*通知栏-信息显示*/
+.notice-broder-box .notice-message-box{
+	display:block
+	;width:100%
+  	;height:80%
+	;text-align:center
+}
+/*通知栏-标题字样*/
+.notice-broder-box .header-tittle p{
+	font-size:2em
+	;color: #DFFEE7
+}
+
+/*购物车*/
+.shop-car-box{
+	position:fixed
+	;border-radius:0.5em
+	;right:6%
+	;bottom:3%
+	;width:20%
+	;height:87%
+	;background-color:#E2FDF2
+	;border:0.1em solid #ddd
+	;display: block
+}
+
+/*购物车-标题栏*/
+.shop-car-box .header-tittle{
+	background-color:#8dd
+	;border: 0.1em solid #ccc
+	;border-radius:0.5em
+	;width:100%
+	;text-align:center
+}
+/*购物车-标题字样*/
+.shop-car-box .header-tittle p{
+	font-size:2em
+	;color: #DFF0E7
+}
+/*Clear 清空购物车*/
+.shop-car-box .header-tittle a{
+	font-size:1.2em
+	;font-family:Consolas
+	;text-decoration:none
+	;font-weight:bold
+	;padding:0.2em
+	;border-top: 0.2em solid #ccc
+	;border-left: 0.2em solid #ccc
+	;border-right: 0.2em solid #ccc
+	;border-radius:0.2em
+	;background-color:#E7FDF7
+
+}
+/*购物车-菜单*/
+.shop-car-box .car-menu-box{
+	display:block
+	;width:100%
+  	;height:auto
+	;display: block
+}
+.shop-car-box .car-menu{
+	;height:6%
+	;margin-top: 2%
+	;border-bottom: 0.1em solid #ccc
+	;background-color: #f5f5f5
+	;text-align: center
+	;display:block
+}
+
+.shop-car-box .car-menu menu{
+	display: inline
+	;padding-left:1.2em
+	;font-size:1.2em
+	;font-family:Consolas
+	;font-weight:bold
+}
+
+
+/*Go Pay样式*/
+.shop-car-box .icon-pay{
+	position:absolute
+	;bottom:0
+	;border-radius:0.5em
+	;border: 0.1em solid #ccc
+	;width:100% 
+	;background-color: #fff
+	;text-align:center
+}
+.icon-pay a{
+	font-size:2em
+	;font-color:#0F9
+	;text-decoration: none
+}
+.icon-pay price{
+	font-size:2em
+	;color: rgba(198, 206, 49, 0.82)
+	;display: inline
+	;margin-left:7%
+}
+
+
+/*商家信息*/
+.message-box{
+	width:62%
+	;border-radius:0.5em
+	;height:30%
+	;margin-left:11%
+	;margin-top:5%
+	;background-color:#fff
+	;border:0.1em solid #ddd;
+}
+.message-box .image-box{
+	float:left
+	;background-color:#eee
+	;margin-left:2%
+	;margin-top:1%
+	;width:20%
+	;height:90%
+	;overflow:hidden
+	;padding: 0;
+}
+
+.message-box .image-box img{
+	width: 100%
+	;height: 100%
+}
+
+.message-box .message-detail{
+	float:left
+	;width: 45%
+	;height: 100%
+	;margin-left: 1%
+	;text-align: center
+}
+.message-box .message-detail p{
+	padding-top: 1em
+	;font-size: 2em
+	;font-family: Consolas
+	;border-bottom:0.1em solid #ccc;
+}
+.message-box .message-detail detail{
+	padding-top: 1em
+	;font-size: 1.5em
+	;font-family: Consolas
+}
+.message-box .message-footer{
+	float:right
+	;width: 30%
+	;height: 100%
+	;display: block
+	;overflow: hidden
+}
+.message-box .message-footer .float-left{
+	;width: 100%
+	;height: 50%
+	;padding-top: 2em
+	;display: block
+	;overflow: hidden
+}
+
+.message-box .message-footer .float-right{
+	;width: 100%
+	;height: 50%
+	;display: block
+
+}
+
+.message-footer a{
+	text-align: center
+	;border-radius:0.5em
+	;margin-right: 0.5em
+	;font-size: 1.5em
+	;padding:0.3em
+	;text-decoration:none
+	;font-family: Consolas
+	;border:0.1em solid #eee
+	;display:block
+	;float:left;
+	;width: 5em
+}
+.message-footer a:hover{
+	border:0.1em solid #bbb;
+	;background-color: #eee
+}
+
+
+/*菜单信息*/
+.menu-box{
+	width:62%
+	;border-radius:0.5em
+	;min-height: 20em
+	;height: auto
+	;margin-left:11%
+	;margin-top:1%
+	;margin-bottom: 2.9em
+	;background-color:#fcfcfc
+	;padding-left:0.2% 
+	;padding-top: 0.7%
+	;border:0.1em solid #ddd
+}
+.menu-box .casket-menu-box{
+	width: 100%
+	;height: 25.7em
+}
+.casket-menu-box .casket-menu{
+	float:left
+	;width:32%
+	;height:23em
+	;background-color: #fff
+	;margin-left: 1%
+	;padding-left: 1%
+	;padding-top: 1%
+	;border:0.1em solid #ddd
+	;display: block
+}
+
+.casket-menu .image-box{
+	width:96%
+	;height: 65%
+	;background-color: #ccc;
+	;text-align: center
+}
+.casket-menu .image-box img{
+	width:100%
+	;height:100%
+}
+.casket-menu .image-box miss{
+	padding-top: 37%
+	;color: #999
+	;font-size: 1.3em
+	;font-weight: bold
+	;display:block;
+}
+
+.casket-menu .detail-box{
+	float:left
+	;display: block
+	;width:58%
+	;height: 35%
+	;padding-top: 2.1em
+	;padding-left: 0.3em
+}
+
+.detail-box case-name{
+	font-size: 1.3em
+	;font-family: Consolas
+	;border-bottom:0.1em solid #ccc
+}
+
+.detail-box case-price{
+	margin-top: 1em
+	;font-size: 1.7em
+	;font-family: Consolas
+}
+
+
+.casket-menu .operate-box{
+	float:right
+	;width:42%
+	;height:35%
+	;display: block
+	;overflow:hidden
+}
+.operate-box a{
+	float:left
+	;margin-top: 45%
+	;border-radius: 0.3em
+	;background:#CC66FF
+	;font-weight:800
+	;color:#fff
+	;padding:10px
+	;font-size:1em
+	;text-decoration:none
+	;display: block
+}
+.operate-box num{
+	float:left
+	;font-size: 2em
+	;margin-left: 0.3em
+	;margin-right: 0.3em
+	;margin-top: 45%
+	;font-weight:800
+	;color:#222
+	;display: block
+}
+
+
+/*CSS网页页脚*/
+.body-footer{
+	width: 100%
+	;margin-top:2%
+	;text-align: center
+}
+
+.body-footer hr{
+	width: 80%
+	;border:none
+	;border-top:0.2em solid #edd;
+}
+.body-footer a{
+	color: #555
+	;text-decoration:none
+	;display: inline;
+	;margin-right: 1em
+
+}
+.body-footer p{
+	color: #aaa
+	;display: block
+	;margin-top: 1em
+}

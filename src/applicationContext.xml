@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation" value="classpath:hibernate.cfg.xml">
+		</property>
+	</bean>
+	<!-- dao config -->
+	<bean id="userdao" class="com.dao.UserDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="shopdao" class="com.dao.ShopDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="firstaddressdao" class="com.dao.FirstaddressDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="menudao" class="com.dao.MenuDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="secondaddressdao" class="com.dao.SecondaddressDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!-- service config -->
+	<bean id="userservice" class="com.services.UserServiceImp">
+		<property name="userdao" ref="userdao" />
+	</bean>
+	<bean id="shopservice" class="com.services.ShopServiceImp">
+		<property name="shopdao" ref="shopdao" />
+	</bean>
+	<bean id="firstaddressservice" class="com.services.FirstaddressServiceImp">
+		<property name="firstaddressdao" ref="firstaddressdao" />
+	</bean>
+	<bean id="secondaddressservice" class="com.services.SecondaddressServiceImp">
+		<property name="secondaddressdao" ref="secondaddressdao" />
+	</bean>
+	<bean id="menuservice" class="com.services.MenuServiceImp">
+		<property name="menudao" ref="menudao" />
+	</bean>
+	<!-- action config -->
+	<bean id="useraction" class="com.actions.UserAction">
+		<property name="userservice" ref="userservice" />
+		<property name="shopservice" ref="shopservice" />
+		<property name="firstaddressservice" ref="firstaddressservice" />
+		<property name="secondaddressservice" ref="secondaddressservice" />
+	</bean>
+	<bean id="menuaction" class="com.actions.MenuAction">
+		<property name="menuservice" ref="menuservice" />
+		<property name="shopservice" ref="shopservice" />
+	</bean>
+</beans>

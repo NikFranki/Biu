@@ -1,0 +1,323 @@
+/*添加菜式*/
+/*Table属性*/
+.table-box {
+	display: block
+	;margin-top: 4em
+	;border:1em
+	;margin-left: 20%
+	;margin-bottom: 4em
+	;font-family:Consolas
+	;color:#777
+}
+/*主显示外框*/
+.menu-box-seller{
+	width:62%
+	;border-radius:0.5em
+	;min-height: 20em
+	;margin-left:11%
+	;margin-top:1%
+	;margin-bottom: 2.9em
+	;padding-bottom: 3em
+	;background-color:#fcfcfc
+	;border:0.1em solid #ddd
+}
+.menu-box-seller td{
+	height:2.7em 
+	;text-align: right
+}
+/*查询菜单*/
+.menu-check-box{
+	width: 70%
+	;height: 4em
+	;border-radius:0.5em
+	;border:0.1em solid #bbb;
+	;background-color: #fff
+	;margin-top:1em
+	;margin-bottom: 1em
+	;margin-left: 15%
+	;display: block
+}
+/*菜单查询字体*/
+.menu-check-box p{
+	font-family:Consolas
+	;font-size: 1.2em
+	;color:#444
+}
+
+.menu-check-box .check-name{
+	width: 40%
+	;height: 50%
+	;float: left
+	;margin-top: 1em
+	;border-right: 0.20em solid #bbb
+	;text-align: center
+}
+
+
+.menu-check-box .check-price{
+	width: 25%
+	;height: 50%
+	;float: left
+	;margin-top: 1em
+	;border-right: 0.20em solid #bbb
+	;text-align: center
+}
+/*操作框*/
+.menu-check-box .check-operate{
+	width: 35%
+	;height: 50%
+	;float: left
+	;margin-top: 1em
+	;text-align: center
+}
+
+.check-operate a{
+	background:#CC66FF
+	;font-weight:800
+	;color:#eee
+	;padding:10px
+	;font-size:14px
+	;margin-left: 5%
+	;text-decoration: none
+	;border-radius: 0.3em
+}
+/*查询订单*/
+.order-check-box{
+	width: 70%
+	;height: 8em
+	;border-radius:0.5em
+	;border:0.1em solid #bbb
+	;margin-top:1em
+	;margin-bottom: 1em
+	;margin-left: 15%
+	;display: block
+}
+/*订单下方-用户信息*/
+.order-check-box .order-menu{
+	width: 80%
+	;height: 50%
+	;float: left
+	;padding-top: 3%
+	;border-bottom:0.1em solid #bbb
+	;border-right:0.1em solid #bbb
+}
+/*菜式名称*/
+.order-check-box .order-menu .menu-name{
+	width:35%
+	;height: 70%
+	;float: left
+	;text-align: center
+	;border-right: 0.2em solid #bbb
+	;display: block
+}
+/*菜式价格*/
+.order-check-box .order-menu .menu-price{
+	width:40%
+	;height: 70%
+	;float: left
+	;text-align: center
+	;border-right: 0.2em solid #bbb
+	;display: block
+}
+/*菜式数量*/
+.order-check-box .order-menu .menu-num{
+	width:25%
+	;height: 70%
+	;float: left
+	;text-align: center
+	;display: block
+}
+
+/*订单下方-用户信息*/
+.order-check-box .order-user{
+	width: 80%
+	;height: 50%
+	;float: left
+	;padding-top: 3%
+	;border-right:0.1em solid #bbb
+}
+/*用户名称*/
+.order-check-box .order-user .user-name{
+	width:35%
+	;height: 70%
+	;float: left
+	;text-align: center
+	;border-right: 0.2em solid #bbb
+	;display: block
+}
+/*用户地址*/
+.order-check-box .order-user .user-address{
+	width:40%
+	;height: 70%
+	;float: left
+	;text-align: center
+	;border-right: 0.2em solid #bbb
+	;display: block
+}
+/*用户号码*/
+.order-check-box .order-user .user-phone{
+	width:25%
+	;height: 70%
+	;float: left
+	;text-align: center
+	;display: block
+}
+/*订单操作*/
+.order-check-box .order-operate{
+	width:20%
+	;height:100%
+	;float: right
+	;text-align: center
+}
+/*订单可操作*/
+.order-check-box .order-operate a{
+	background:#CC66FF
+	;font-weight:800
+	;color:#555
+	;padding:0.3em
+	;font-size:1.4em
+	;display: block
+	;margin-top: 29%
+	;text-decoration: none
+	;border-radius: 0.5em
+}
+.order-check-box .order-operate a:hover{
+	border: 0.1em solid #999
+	;color:#ecc
+}
+/*订单不可操作*/
+.order-check-box .order-operate operate{
+	background:#CC66FF
+	;font-weight:800
+	;color:#555
+	;padding:0.3em
+	;font-size:1.4em
+	;display: block
+	;margin-top: 29%
+	;border-radius: 0.5em
+}
+
+/*营业状况*/
+.menu-box-seller .volume-box-chose{
+	float: left
+	;width:100%
+	;height: 4em
+	;padding-top:1%
+	;padding-right: 3%
+}
+
+.menu-box-seller .volume-box-chose a{
+	text-align: center
+	;border-radius:0.5em
+	;float: right
+	;font-size: 1em
+	;padding:0.5em
+	;text-decoration:none
+	;font-family: Consolas
+	;display:block
+	;border:0.1em solid #ccc
+	;margin-left: 1.3em
+}
+.menu-box-seller .volume-box-chose a:hover{
+	border:0.1em solid #bbb
+	;background-color: #eee
+}
+
+.menu-box-seller .volume-box{
+	width:70%
+	;height: auto
+	;margin-left: 15%
+	;display: block
+	;margin-top: 10%
+}
+.menu-box-seller .volume-box .volume-box-tittle{
+	width:100%
+	;height: 4em
+	;border-top-left-radius:1em
+	;border-top-right-radius:1em
+	;border: 0.1em solid #999;
+	;margin-bottom: 0.2em
+	;display: block
+}
+
+.volume-box .first{
+	width:20%
+	;height:60%
+	;float: left
+	;margin-top:2%
+	;text-align: center
+	;padding-top: 0.3em
+	;font-size: 1.3em
+	;font-family: Consolas
+	;border-right:0.1em solid #bbb
+	;font-weight: bold
+}
+
+.volume-box .second{
+	width:20%
+	;height:60%
+	;float: left
+	;margin-top:2%
+	;text-align: center
+	;padding-top: 0.3em
+	;font-size: 1.3em
+	;font-family: Consolas
+	;border-right:0.1em solid #bbb
+	;font-weight: bold
+}
+
+.volume-box .third{
+	width:20%
+	;height:60%
+	;float: left
+	;margin-top:2%
+	;text-align: center
+	;padding-top: 0.3em
+	;font-size: 1.3em
+	;font-family: Consolas
+	;border-right:0.1em solid #bbb
+	;font-weight: bold
+}
+
+.volume-box .fourth{
+	width:20%
+	;height:60%
+	;float: left
+	;margin-top:2%
+	;text-align: center
+	;padding-top: 0.3em
+	;font-size: 1.3em
+	;font-family: Consolas
+	;border-right:0.1em solid #bbb
+	;font-weight: bold
+}
+
+.menu-box-seller .volume-box .fifth{
+	width:20%
+	;height:60%
+	;float: left
+	;margin-top:2%
+	;text-align: center
+	;padding-top: 0.3em
+	;font-size: 1.3em
+	;font-family: Consolas
+	;font-weight: bold
+}
+
+.menu-box-seller .volume-box .volume-box-message{
+	width:100%
+	;height: 4em
+	;border-bottom-left-radius:1em
+	;border-bottom-right-radius:1em
+	;border: 0.1em solid #999;
+}
+
+.frame-box{
+	margin-top:3em 
+	;width:100% 
+	;height:auto 
+	;border:no 
+	;border:0 
+	;margin-width:0 
+	;margin-height:0 
+}

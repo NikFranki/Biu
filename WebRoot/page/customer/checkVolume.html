@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../css/navbar-fixed-top.css" />
+        <link rel="stylesheet" href="../../css/user-operate.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+        <div class="nav-box">
+            <div class="logo-box">
+                <a href="#"><image src="../../images/add.png"/>Biu Biu Biu</a>
+            </div>
+            <div class="banner-box">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Detail</a></li>
+                    <li><a href="#">Evo</a></li>
+                <ul>
+            </div>
+            <div class="login-box">
+                    <span>Welcome <a href="./index.html">amdin</a> !</span>
+            <s>[</s><a href="" class="color">珠海</a><s>]</s>
+                    <a href="#2">Quit</a>
+
+            </div>
+        </div>
+
+        <div class="shop-car-box">
+            <div class="header-tittle"><p>Shopping Cart</p><a href="#3">Clear</a></div>
+            <div class="car-menu-box">
+                <div class="car-menu">
+                    <menu>The Menu</menu>
+                    <menu>$10</menu>
+                    <menu>3</menu>
+                </div>
+                <div class="car-menu">
+                    <menu>这里是中文名字</menu>
+                    <menu>$10</menu>
+                    <menu>3</menu>
+                </div>
+            </div>
+            <div class="icon-pay">
+                <a href="#">Go pay</a><price>$120</price>
+            </div>
+        </div>
+
+        <!--/*用户信息*/-->
+        <div class="message-box">
+            <div class="image-box"><image src="../../upload/userImages/4.jpg"/></div>
+            <div class="message-detail">
+                <p>This is the Name</p>
+                <detail>this is the detail</detail>
+            </div>
+            <div class="message-footer">
+                <div class="float-left"> 
+                    <a href="./changePWD.html">修改密码</a>
+                    <a href="./changemessage.html">修改信息</a>
+                </div>
+                <div class="float-right">
+                    <a href="./checkOrder.html">查询订单</a>
+                    <a href="./checkVolume.html" style="background:#eee;border:0.1em solid #bbb;">支出状况</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-box-seller">
+            <div class="volume-box-chose">
+                <a href="#" onclick="changeStyle(this)" id="1">周支出状况</a>
+                <a href="#" onclick="changeStyle(this)" id="2">月支出状况</a>
+                <a href="#" onclick="changeStyle(this)" id="3">总支出状况</a>
+            </div>
+            <div class="volume-box">
+                <div class="volume-box-tittle">
+                    <div class="first">总订单数</div>
+                    <div class="second">完成订单</div>
+                    <div class="third">失败订单</div>
+                    <div class="fourth">成功率</div>
+                    <div class="fifth">支出金额</div>
+                </div>
+
+                <div class="volume-box-message">
+                    <div class="first">50</div>
+                    <div class="second">49</div>
+                    <div class="third">1</div>
+                    <div class="fourth">98%</div>
+                    <div class="fifth">493</div>
+                </div>
+            </div>     
+        </div>
+
+        <iframe class="frame-box" src="../commFooter.html"></iframe>     
+    </body>
+    <script type="text/javascript">
+            function changeStyle(obj){
+                obj.style.backgroundColor="#ccc";
+                if(obj.id != "1"){
+                    var tmp = document.getElementById("1");
+                    tmp.style.backgroundColor="#fcfcfc";
+                }
+                if(obj.id != "2"){
+                    var tmp = document.getElementById("2");
+                    tmp.style.backgroundColor="#fcfcfc";
+                }
+                if(obj.id != "3"){
+                    var tmp = document.getElementById("3");
+                    tmp.style.backgroundColor="#fcfcfc";
+                }   
+            }
+
+    </script>
+</html>
